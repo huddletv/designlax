@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CIDLAX — Brand Reference Sheet</title>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --black: #0a0a0a;
+    --white: #ffffff;
+    --off-white: #f2f1ed;
+    --grey: #6e6e6e;
+    --line: #d8d6cf;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    background: var(--off-white);
+    color: var(--black);
+    font-family: 'Inter', sans-serif;
+  }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 60px 32px 100px; }
+  .display { font-family: 'Anton', sans-serif; text-transform: uppercase; }
+  .mono { font-family: 'IBM Plex Mono', monospace; }
+
+  header { margin-bottom: 60px; }
+  header .kicker { font-size: 13px; letter-spacing: 0.04em; color: var(--grey); margin-bottom: 10px; }
+  header h1 { font-size: clamp(40px, 6vw, 64px); }
+
+  section { margin-bottom: 70px; }
+  .section-label { font-size: 13px; color: var(--grey); letter-spacing: 0.04em; margin-bottom: 24px; border-bottom: 1px solid var(--line); padding-bottom: 14px; }
+
+  /* logo lockups */
+  .logo-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .logo-box { padding: 50px 40px; display: flex; align-items: center; justify-content: center; }
+  .logo-box.on-black { background: var(--black); }
+  .logo-box.on-white { background: var(--white); border: 1px solid var(--line); }
+  .logo-box svg { width: 100%; max-width: 320px; height: auto; }
+  .logo-caption { font-size: 12px; color: var(--grey); margin-top: 10px; text-align: center; }
+
+  /* color specs */
+  .color-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+  .swatch { background: var(--off-white); }
+  .swatch-fill { height: 90px; }
+  .swatch-info { padding: 16px; }
+  .swatch-info .name { font-size: 13px; font-weight: 600; margin-bottom: 6px; }
+  .swatch-info .code { font-size: 12px; color: var(--grey); }
+
+  /* clearspace / placement mockup */
+  .mockup-wrap { background: var(--black); padding: 60px 40px; display: flex; justify-content: center; }
+  .mockup-note { font-size: 13px; color: var(--grey); margin-top: 16px; max-width: 500px; }
+
+  footer { border-top: 1px solid var(--line); padding-top: 24px; font-size: 12px; color: var(--grey); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="kicker mono">BRAND REFERENCE — V1</div>
+    <h1 class="display">CIDLAX</h1>
+  </header>
+
+  <section>
+    <div class="section-label">01 — WORDMARK</div>
+    <div class="logo-row">
+      <div>
+        <div class="logo-box on-black">
+          <svg viewBox="0 0 640 160" xmlns="http://www.w3.org/2000/svg">
+            <text x="6" y="100" style="font-family:'Anton',sans-serif;" font-size="92" letter-spacing="2" fill="#ffffff">CIDLAX</text>
+            <polygon points="6,122 640,132 640,136 6,131" fill="#ffffff"/>
+          </svg>
+        </div>
+        <div class="logo-caption">Primary — white on black</div>
+      </div>
+      <div>
+        <div class="logo-box on-white">
+          <svg viewBox="0 0 640 160" xmlns="http://www.w3.org/2000/svg">
+            <text x="6" y="100" style="font-family:'Anton',sans-serif;" font-size="92" letter-spacing="2" fill="#0a0a0a">CIDLAX</text>
+            <polygon points="6,122 640,132 640,136 6,131" fill="#0a0a0a"/>
+          </svg>
+        </div>
+        <div class="logo-caption">Reversed — black on white</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-label">02 — COLOR</div>
+    <div class="color-grid">
+      <div class="swatch">
+        <div class="swatch-fill" style="background:#0a0a0a;"></div>
+        <div class="swatch-info">
+          <div class="name">Black</div>
+          <div class="code mono">#0A0A0A</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-fill" style="background:#ffffff; border-bottom:1px solid var(--line);"></div>
+        <div class="swatch-info">
+          <div class="name">White</div>
+          <div class="code mono">#FFFFFF</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-fill" style="background:#f2f1ed; border-bottom:1px solid var(--line);"></div>
+        <div class="swatch-info">
+          <div class="name">Off-white</div>
+          <div class="code mono">#F2F1ED</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-fill" style="background:#6e6e6e;"></div>
+        <div class="swatch-info">
+          <div class="name">Grey (support)</div>
+          <div class="code mono">#6E6E6E</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-label">03 — PLACEMENT ON PRODUCT</div>
+    <div class="mockup-wrap" style="background:#dedbd2;">
+      <svg viewBox="0 0 500 140" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="mockSilver" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#c9c9c9"/>
+            <stop offset="45%" stop-color="#8f8f8f"/>
+            <stop offset="55%" stop-color="#787878"/>
+            <stop offset="100%" stop-color="#a5a5a5"/>
+          </linearGradient>
+        </defs>
+        <!-- shaft body -->
+        <rect x="10" y="55" width="480" height="30" rx="4" fill="#ffffff" stroke="#c4c1b6" stroke-width="1"/>
+        <!-- wordmark placed at midsection -->
+        <text x="150" y="76" style="font-family:'Anton',sans-serif;" font-size="20" letter-spacing="1.5" fill="url(#mockSilver)" stroke="#8a8a8a" stroke-width="0.3">CIDLAX</text>
+      </svg>
+    </div>
+    <div class="mockup-note">First batch spec: white shaft body with the CIDLAX wordmark in silver — laser-etched or decal-applied at the midsection. Keep clearspace around the mark equal to the height of the "C" on all sides.</div>
+  </section>
+
+  <section>
+    <div class="section-label">04 — FIRST BATCH COLORWAY</div>
+    <div class="color-grid">
+      <div class="swatch">
+        <div class="swatch-fill" style="background:#ffffff; border-bottom:1px solid var(--line);"></div>
+        <div class="swatch-info">
+          <div class="name">Shaft body</div>
+          <div class="code mono">White anodize / white finish</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-fill" style="background:linear-gradient(180deg,#c9c9c9,#8f8f8f 45%,#787878 55%,#a5a5a5);"></div>
+        <div class="swatch-info">
+          <div class="name">Logo</div>
+          <div class="code mono">Silver — metallic finish</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    CIDLAX Brand Reference V1 — for internal and manufacturer use.
+  </footer>
+
+</div>
+</body>
+</html>
